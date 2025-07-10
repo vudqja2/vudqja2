@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>과학 퀴즈</title>
+  <style>
+    body { font-family: sans-serif; line-height: 1.6; margin: 20px; }
+    h2 { margin-top: 2em; }
+    .question { margin-bottom: 1em; }
+    .wrong { background: #fdd; }
+    .correct { background: #dfd; }
+    .result { font-weight: bold; margin-top: 2em; }
+    button { padding: 0.5em 1em; font-size: 1em; }
+  </style>
+</head>
+<body>
+
+  <h1>과학 퀴즈 (1–79)</h1>
+
+  <h2>1–20 (O/X)</h2>
+  <div id="section1">
+    <!-- 1–20 -->
+    <div class="question" data-q="1"><label>1. 태양은 백색왜성이다. </label>
+      <label><input type="radio" name="q1" value="O"> O</label>
+      <label><input type="radio" name="q1" value="X"> X</label>
+    </div>
+    <div class="question" data-q="2"><label>2. 태풍은 지구 자전에 영향을 받지 않는다. </label>
+      <label><input type="radio" name="q2" value="O"> O</label>
+      <label><input type="radio" name="q2" value="X"> X</label>
+    </div>
+    <div class="question" data-q="3"><label>3. 전도는 기체 상태의 물질에서도 잘 일어난다. </label>
+      <label><input type="radio" name="q3" value="O"> O</label>
+      <label><input type="radio" name="q3" value="X"> X</label>
+    </div>
+    <div class="question" data-q="4"><label>4. 지구의 자전 때문에 계절의 변화가 생긴다. </label>
+      <label><input type="radio" name="q4" value="O"> O</label>
+      <label><input type="radio" name="q4" value="X"> X</label>
+    </div>
+    <div class="question" data-q="5"><label>5. 자석을 반으로 자르면 자극이 하나만 남는다. </label>
+      <label><input type="radio" name="q5" value="O"> O</label>
+      <label><input type="radio" name="q5" value="X"> X</label>
+    </div>
+    <div class="question" data-q="6"><label>6. 태양계의 모든 행성은 같은 방향으로 자전한다. </label>
+      <label><input type="radio" name="q6" value="O"> O</label>
+      <label><input type="radio" name="q6" value="X"> X</label>
+    </div>
+    <div class="question" data-q="7"><label>7. 사람은 평생 약 2만 리터의 침을 삼킨다. </label>
+      <label><input type="radio" name="q7" value="O"> O</label>
+      <label><input type="radio" name="q7" value="X"> X</label>
+    </div>
+    <div class="question" data-q="8"><label>8. 박쥐는 눈이 퇴화되어 완전히 앞을 못 본다. </label>
+      <label><input type="radio" name="q8" value="O"> O</label>
+      <label><input type="radio" name="q8" value="X"> X</label>
+    </div>
+    <div class="question" data-q="9"><label>9. 꿀은 유통기한이 없는 식품이다. </label>
+      <label><input type="radio" name="q9" value="O"> O</label>
+      <label><input type="radio" name="q9" value="X"> X</label>
+    </div>
+    <div class="question" data-q="10"><label>10. 사람의 DNA는 바나나와 약 50% 일치한다. </label>
+      <label><input type="radio" name="q10" value="O"> O</label>
+      <label><input type="radio" name="q10" value="X"> X</label>
+    </div>
+    <div class="question" data-q="11"><label>11. 바닷물은 순수한 물보다 어는점이 낮다. </label>
+      <label><input type="radio" name="q11" value="O"> O</label>
+      <label><input type="radio" name="q11" value="X"> X</label>
+    </div>
+    <div class="question" data-q="12"><label>12. 개는 땀샘이 있어 땀을 흘려 체온을 조절한다. </label>
+      <label><input type="radio" name="q12" value="O"> O</label>
+      <label><input type="radio" name="q12" value="X"> X</label>
+    </div>
+    <div class="question" data-q="13"><label>13. 북극곰의 털은 하얗다. </label>
+      <label><input type="radio" name="q13" value="O"> O</label>
+      <label><input type="radio" name="q13" value="X"> X</label>
+    </div>
+    <div class="question" data-q="14"><label>14. 사람의 목뼈는 7개이다. 가장 목이 긴 기린의 목뼈는 10개 이상이다. </label>
+      <label><input type="radio" name="q14" value="O"> O</label>
+      <label><input type="radio" name="q14" value="X"> X</label>
+    </div>
+    <div class="question" data-q="15"><label>15. 플랑크만이 분홍색인 이유는 먹는 색이 때문이다. </label>
+      <label><input type="radio" name="q15" value="O"> O</label>
+      <label><input type="radio" name="q15" value="X"> X</label>
+    </div>
+    <div class="question" data-q="16"><label>16. 태양계에서 가장 큰 화산은 목성에 있는 올림푸스 산이다. </label>
+      <label><input type="radio" name="q16" value="O"> O</label>
+      <label><input type="radio" name="q16" value="X"> X</label>
+    </div>
+    <div class="question" data-q="17"><label>17. 우리가 먹는 감자는 줄기부분이다. </label>
+      <label><input type="radio" name="q17" value="O"> O</label>
+      <label><input type="radio" name="q17" value="X"> X</label>
+    </div>
+    <div class="question" data-q="18"><label>18. 북극곰은 겨울잠을 잔다. </label>
+      <label><input type="radio" name="q18" value="O"> O</label>
+      <label><input type="radio" name="q18" value="X"> X</label>
+    </div>
+    <div class="question" data-q="19"><label>19. 방귀를 참으면 트림으로 나온다. </label>
+      <label><input type="radio" name="q19" value="O"> O</label>
+      <label><input type="radio" name="q19" value="X"> X</label>
+    </div>
+    <div class="question" data-q="20"><label>20. 태양계에서 가장 큰 행성은 목성이고, 가장 밀도가 낮은 행성은 토성이다. </label>
+      <label><input type="radio" name="q20" value="O"> O</label>
+      <label><input type="radio" name="q20" value="X"> X</label>
+    </div>
+  </div>
+
+  <h2>21–60 (주관식/객관식)</h2>
+  <div id="section2">
+    <!-- 21–40 주관식 -->
+    <div class="question" data-q="21"><label>21. 가속도를 뜻하는 용어는?</label>
+      <input type="text" name="q21">
+    </div>
+    <div class="question" data-q="22"><label>22. 자전 속도 가장 빠른 행성?</label>
+      <input type="text" name="q22">
+    </div>
+    <div class="question" data-q="23"><label>23. 대기 중 가장 많은 기체?</label>
+      <input type="text" name="q23">
+    </div>
+    <div class="question" data-q="24"><label>24. W자 별자리 (북두칠성과 함께)?</label>
+      <input type="text" name="q24">
+    </div>
+    <div class="question" data-q="25"><label>25. 원자 번호와 일치하는 양전하 입자?</label>
+      <input type="text" name="q25">
+    </div>
+    <div class="question" data-q="26"><label>26. 우유 분해 효소?</label>
+      <input type="text" name="q26">
+    </div>
+    <div class="question" data-q="27"><label>27. 전반사 현상?</label>
+      <input type="text" name="q27">
+    </div>
+    <div class="question" data-q="28"><label>28. 해안 침식 수직절벽?</label>
+      <input type="text" name="q28">
+    </div>
+    <div class="question" data-q="29"><label>29. 최초 달 착륙 우주선?</label>
+      <input type="text" name="q29">
+    </div>
+    <div class="question" data-q="30"><label>30. 판게아 대륙 이동 학설?</label>
+      <input type="text" name="q30">
+    </div>
+    <div class="question" data-q="31"><label>31. 주기율표 만든 화학자?</label>
+      <input type="text" name="q31">
+    </div>
+    <div class="question" data-q="32"><label>32. 태양 가려지는 현상?</label>
+      <input type="text" name="q32">
+    </div>
+    <div class="question" data-q="33"><label>33. 달 가려지는 현상?</label>
+      <input type="text" name="q33">
+    </div>
+    <div class="question" data-q="34"><label>34. 세포 에너지 생산 소기관?</label>
+      <input type="text" name="q34">
+    </div>
+    <div class="question" data-q="35"><label>35. 위액 단백질 소화 효소?</label>
+      <input type="text" name="q35">
+    </div>
+    <div class="question" data-q="36"><label>36. 음의 높낮이 결정 물리량?</label>
+      <input type="text" name="q36">
+    </div>
+    <div class="question" data-q="37"><label>37. 외부힘 없으면 등속 직선 운동 성질?</label>
+      <input type="text" name="q37">
+    </div>
+    <div class="question" data-q="38"><label>38. 소화 효소와 인슐린 분비 기관?</label>
+      <input type="text" name="q38">
+    </div>
+    <div class="question" data-q="39"><label>39. 전자 잃고 양이온 되는 반응?</label>
+      <input type="text" name="q39">
+    </div>
+    <div class="question" data-q="40"><label>40. 광합성 빛 반응 생성 기체?</label>
+      <input type="text" name="q40">
+    </div>
+
+    <!-- 41–60 -->
+    <div class="question" data-q="41"><label>41. 동일한 압력·기체 부피 비례 법칙?</label>
+      <input type="text" name="q41">
+    </div>
+    <div class="question" data-q="42"><label>42. 지진 파동 중 P파!</label>
+      <input type="text" name="q42">
+    </div>
+    <div class="question" data-q="43"><label>43. 화산 폭발력 결정 점성 물질?</label>
+      <input type="text" name="q43">
+    </div>
+    <div class="question" data-q="44"><label>44. 극지방 밤하늘 빛?</label>
+      <input type="text" name="q44">
+    </div>
+    <div class="question" data-q="45"><label>45. 단백질 합성 소기관?</label>
+      <input type="text" name="q45">
+    </div>
+    <div class="question" data-q="46"><label>46. 혈액 산소 운반 단백질?</label>
+      <input type="text" name="q46">
+    </div>
+    <div class="question" data-q="47"><label>47. 지구 외핵 층 통과 파동?</label>
+      <input type="text" name="q47">
+    </div>
+    <div class="question" data-q="48"><label>48. 혈액 응고 중요한 성분?</label>
+      <input type="text" name="q48">
+    </div>
+    <div class="question" data-q="49"><label>49. 내장 기관 조절 신경계?</label>
+      <input type="text" name="q49">
+    </div>
+    <div class="question" data-q="50"><label>50. 코리올리 힘 이름?</label>
+      <input type="text" name="q50">
+    </div>
+    <div class="question" data-q="51"><label>51. 지진 세기 단위?</label>
+      <input type="text" name="q51">
+    </div>
+    <div class="question" data-q="52"><label>52. DNA 뭉쳐 막대구조?</label>
+      <input type="text" name="q52">
+    </div>
+    <div class="question" data-q="53"><label>53. 석회수 뿌옇게 흐려지는 기체?</label>
+      <input type="text" name="q53">
+    </div>
+    <div class="question" data-q="54"><label>54. 달의 뒷면 첫 촬영국?</label>
+      <input type="text" name="q54">
+    </div>
+    <div class="question" data-q="55"><label>55. 체온 조절 중추 기관?</label>
+      <input type="text" name="q55">
+    </div>
+    <div class="question" data-q="56"><label>56. 사람 몸속에서 가장 긴 기관?</label>
+      <label><input type="radio" name="q56" value="①"> ① 대장</label>
+      <label><input type="radio" name="q56" value="②"> ② 소장</label>
+      <label><input type="radio" name="q56" value="③"> ③ 위</label>
+      <label><input type="radio" name="q56" value="④"> ④ 십이지장</label>
+    </div>
+    <div class="question" data-q="57"><label>57. 심장에서 폐로 가는 혈관?</label>
+      <label><input type="radio" name="q57" value="①"> ① 대동맥</label>
+      <label><input type="radio" name="q57" value="②"> ② 폐정맥</label>
+      <label><input type="radio" name="q57" value="③"> ③ 폐동맥</label>
+      <label><input type="radio" name="q57" value="④"> ④ 대정맥</label>
+    </div>
+    <div class="question" data-q="58"><label>58. 광합성 주요 산물?</label>
+      <label><input type="radio" name="q58" value="①"> ① 이산화탄소</label>
+      <label><input type="radio" name="q58" value="②"> ② 산소와 포도당</label>
+      <label><input type="radio" name="q58" value="③"> ③ 물</label>
+      <label><input type="radio" name="q58" value="④"> ④ 질소</label>
+    </div>
+    <div class="question" data-q="59"><label>59. DNA 복제 시기?</label>
+      <label><input type="radio" name="q59" value="①"> ① 세포가 죽을 때</label>
+      <label><input type="radio" name="q59" value="②"> ② 광합성 중</label>
+      <label><input type="radio" name="q59" value="③"> ③ 세포분열 전</label>
+      <label><input type="radio" name="q59" value="④"> ④ 단백질 생성 후</label>
+    </div>
+    <div class="question" data-q="60"><label>60. 식물 뿌리 물 끌어올리는 힘?</label>
+      <label><input type="radio" name="q60" value="①"> ① 중력</label>
+      <label><input type="radio" name="q60" value="②"> ② 삼투압</label>
+      <label><input type="radio" name="q60" value="③"> ③ 공기압</label>
+      <label><input type="radio" name="q60" value="④"> ④ 마찰력</label>
+    </div>
+  </div>
+
+  <h2>61–78 (객관식)</h2>
+  <div id="section3">
+    <!-- 61–78 -->
+    <div class="question" data-q="61"><label>61. 지구의 나이는?</label>
+      <label><input type="radio" name="q61" value="①"> ① 45억 년</label>
+      <label><input type="radio" name="q61" value="②"> ② 13억 년</label>
+      <label><input type="radio" name="q61" value="③"> ③ 15억 년</label>
+      <label><input type="radio" name="q61" value="④"> ④ 100억 년</label>
+    </div>
+    <div class="question" data-q="62"><label>62. 별 밝기·색깔 결정 특성?</label>
+      <label><input type="radio" name="q62" value="①"> ① 질량</label>
+      <label><input type="radio" name="q62" value="②"> ② 자전 속도</label>
+      <label><input type="radio" name="q62" value="③"> ③ 온도</label>
+      <label><input type="radio" name="q62" value="④"> ④ 나이</label>
+    </div>
+    <div class="question" data-q="63"><label>63. 파장 가장 짧은 전자기파?</label>
+      <label><input type="radio" name="q63" value="①"> ① 가시광선</label>
+      <label><input type="radio" name="q63" value="②"> ② 자외선</label>
+      <label><input type="radio" name="q63" value="③"> ③ 적외선</label>
+      <label><input type="radio" name="q63" value="④"> ④ 감마선</label>
+    </div>
+    <div class="question" data-q="64"><label>64. 방귀 냄새 주요 성분?</label>
+      <label><input type="radio" name="q64" value="①"> ① 이산화탄소</label>
+      <label><input type="radio" name="q64" value="②"> ② 암모니아</label>
+      <label><input type="radio" name="q64" value="③"> ③ 메탄</label>
+      <label><input type="radio" name="q64" value="④"> ④ 산소</label>
+    </div>
+    <div class="question" data-q="65"><label>65. 무게 대비 강한 근육?</label>
+      <label><input type="radio" name="q65" value="①"> ① 이두근</label>
+      <label><input type="radio" name="q65" value="②"> ② 혀</label>
+      <label><input type="radio" name="q65" value="③"> ③ 종아리 근</label>
+      <label><input type="radio" name="q65" value="④"> ④ 심장</label>
+    </div>
+    <div class="question" data-q="66"><label>66. RNA 바이러스 유전 정보 복제 기관?</label>
+      <label><input type="radio" name="q66" value="①"> ① 세포막</label>
+      <label><input type="radio" name="q66" value="②"> ② 세포질</label>
+      <label><input type="radio" name="q66" value="③"> ③ 핵</label>
+      <label><input type="radio" name="q66" value="④"> ④ 미토콘드리아</label>
+    </div>
+    <div class="question" data-q="67"><label>67. 잘못된 전염병 정보 현상?</label>
+      <label><input type="radio" name="q67" value="①"> ① 팬데믹</label>
+      <label><input type="radio" name="q67" value="②"> ② 엔데믹</label>
+      <label><input type="radio" name="q67" value="③"> ③ 에피데믹</label>
+      <label><input type="radio" name="q67" value="④"> ④ 인포데믹</label>
+    </div>
+    <div class="question" data-q="68"><label>68. 우주에서 두 번째로 많은 원소?</label>
+      <label><input type="radio" name="q68" value="①"> ① 산소</label>
+      <label><input type="radio" name="q68" value="②"> ② 헬륨</label>
+      <label><input type="radio" name="q68" value="③"> ③ 탄소</label>
+      <label><input type="radio" name="q68" value="④"> ④ 질소</label>
+    </div>
+    <div class="question" data-q="69"><label>69. 우주 배경복사가 지지하는 이론?</label>
+      <label><input type="radio" name="q69" value="①"> ① 지구중심설</label>
+      <label><input type="radio" name="q69" value="②"> ② 평창 우주론</label>
+      <label><input type="radio" name="q69" value="③"> ③ 빅뱅 이론</label>
+      <label><input type="radio" name="q69" value="④"> ④ 정지 우주론</label>
+    </div>
+    <div class="question" data-q="70"><label>70. 소리 세기 10배 증가 시 체감?</label>
+      <label><input type="radio" name="q70" value="①"> ① 10배</label>
+      <label><input type="radio" name="q70" value="②"> ② 2배</label>
+      <label><input type="radio" name="q70" value="③"> ③ 변화 없음</label>
+      <label><input type="radio" name="q70" value="④"> ④ 100배</label>
+    </div>
+    <div class="question" data-q="71"><label>71. 백혈구의 병원균 작용?</label>
+      <label><input type="radio" name="q71" value="①"> ① 식균작용</label>
+      <label><input type="radio" name="q71" value="②"> ② 세포호흡</label>
+      <label><input type="radio" name="q71" value="③"> ③ 중화반응</label>
+      <label><input type="radio" name="q71" value="④"> ④ 삼투작용</label>
+    </div>
+    <div class="question" data-q="72"><label>72. 기체 압력·부피 반비례 법칙?</label>
+      <label><input type="radio" name="q72" value="①"> ① 샤를의 법칙</label>
+      <label><input type="radio" name="q72" value="②"> ② 보일의 법칙</label>
+      <label><input type="radio" name="q72" value="③"> ③ 돌턴의 법칙</label>
+      <label><input type="radio" name="q72" value="④"> ④ 패러데이 법칙</label>
+    </div>
+    <div class="question" data-q="73"><label>73. 자전축 거의 누워진 행성?</label>
+      <label><input type="radio" name="q73" value="①"> ① 금성</label>
+      <label><input type="radio" name="q73" value="②"> ② 화성</label>
+      <label><input type="radio" name="q73" value="③"> ③ 천왕성</label>
+      <label><input type="radio" name="q73" value="④"> ④ 해왕성</label>
+    </div>
+    <div class="question" data-q="74"><label>74. 잎까지 물 이동 원동력?</label>
+      <label><input type="radio" name="q74" value="①"> ① 삼투압</label>
+      <label><input type="radio" name="q74" value="②"> ② 모세관 현상</label>
+      <label><input type="radio" name="q74" value="③"> ③ 증산작용</label>
+      <label><input type="radio" name="q74" value="④"> ④ 광합성</label>
+    </div>
+    <div class="question" data-q="75"><label>75. 면역 반응 관여 세포?</label>
+      <label><input type="radio" name="q75" value="①"> ① 적혈구</label>
+      <label><input type="radio" name="q75" value="②"> ② 백혈구</label>
+      <label><input type="radio" name="q75" value="③"> ③ 혈소판</label>
+      <label><input type="radio" name="q75" value="④"> ④ 혈장</label>
+    </div>
+    <div class="question" data-q="76"><label>76. ‘붉은 행성’?</label>
+      <label><input type="radio" name="q76" value="①"> ① 금성</label>
+      <label><input type="radio" name="q76" value="②"> ② 화성</label>
+      <label><input type="radio" name="q76" value="③"> ③ 목성</label>
+      <label><input type="radio" name="q76" value="④"> ④ 토성</label>
+    </div>
+    <div class="question" data-q="77"><label>77. 산성비 주요 원인 아닌?</label>
+      <label><input type="radio" name="q77" value="①"> ① 이산화황</label>
+      <label><input type="radio" name="q77" value="②"> ② 질소산화물</label>
+      <label><input type="radio" name="q77" value="③"> ③ 이산화탄소</label>
+      <label><input type="radio" name="q77" value="④"> ④ 염화수소</label>
+    </div>
+    <div class="question" data-q="78"><label>78. 해양 지각 생성 장소?</label>
+      <label><input type="radio" name="q78" value="①"> ① 해구</label>
+      <label><input type="radio" name="q78" value="②"> ② 해령</label>
+      <label><input type="radio" name="q78" value="③"> ③ 대륙붕</label>
+      <label><input type="radio" name="q78" value="④"> ④ 심해저 평원</label>
+    </div>
+  </div>
+
+  <h2>79. 과학자 업적 연결</h2>
+  <div id="section4">
+    <div class="question" data-q="79-1"><label>79-1. 멘델 업적?</label>
+      <label><input type="radio" name="q79-1" value="A"> A. 상대성 이론</label>
+      <label><input type="radio" name="q79-1" value="B"> B. 유전 법칙</label>
+      <label><input type="radio" name="q79-1" value="C"> C. 만유인력 법칙</label>
+      <label><input type="radio" name="q79-1" value="D"> D. 자연선택과 진화</label>
+    </div>
+    <div class="question" data-q="79-2"><label>79-2. 뉴턴 업적?</label>
+      <label><input type="radio" name="q79-2" value="A"> A. 상대성 이론</label>
+      <label><input type="radio" name="q79-2" value="B"> B. 유전 법칙</label>
+      <label><input type="radio" name="q79-2" value="C"> C. 만유인력 법칙</label>
+      <label><input type="radio" name="q79-2" value="D"> D. 자연선택과 진화</label>
+    </div>
+    <div class="question" data-q="79-3"><label>79-3. 아인슈타인 업적?</label>
+      <label><input type="radio" name="q79-3" value="A"> A. 상대성 이론</label>
+      <label><input type="radio" name="q79-3" value="B"> B. 유전 법칙</label>
+      <label><input type="radio" name="q79-3" value="C"> C. 만유인력 법칙</label>
+      <label><input type="radio" name="q79-3" value="D"> D. 자연선택과 진화</label>
+    </div>
+    <div class="question" data-q="79-4"><label>79-4. 다윈 업적?</label>
+      <label><input type="radio" name="q79-4" value="A"> A. 상대성 이론</label>
+      <label><input type="radio" name="q79-4" value="B"> B. 유전 법칙</label>
+      <label><input type="radio" name="q79-4" value="C"> C. 만유인력 법칙</label>
+      <label><input type="radio" name="q79-4" value="D"> D. 자연선택과 진화</label>
+    </div>
+  </div>
+
+  <button onclick="checkAnswers()">정답 확인</button>
+  <div id="result" class="result"></div>
+
+  <script>
+    const answers = {
+      // 1–20
+      1: 'X',2:'X',3:'X',4:'X',5:'X',6:'X',7:'O',8:'X',9:'O',10:'O',
+      11:'O',12:'X',13:'X',14:'X',15:'O',16:'X',17:'O',18:'X',19:'X',20:'O',
+      // 21–40
+      21:'가속도',22:'목성',23:'질소',24:'카시오페이아자리',25:'양성자',
+      26:'락타아제',27:'전반사',28:'해식애',29:'아폴로 11호',30:'대륙이동설',
+      31:'멘델레예프',32:'일식',33:'월식',34:'미토콘드리아',35:'펩신',
+      36:'진동수',37:'관성',38:'이자',39:'산화',40:'산소',
+      // 41–55
+      41:'샤를의 법칙',42:'P파',43:'마그마',44:'오로라',45:'리보솜',
+      46:'헤모글로빈',47:'외핵',48:'혈소판',49:'자율 신경계',50:'전향력',
+      51:'규모',52:'염색체',53:'이산화탄소',54:'러시아',55:'시상하부',
+      // 56–60
+      56:'②',57:'③',58:'②',59:'③',60:'②',
+      // 61–78
+      61:'①',62:'③',63:'④',64:'②',65:'②',66:'②',67:'④',68:'②',
+      69:'③',70:'②',71:'①',72:'②',73:'③',74:'③',75:'②',76:'②',
+      77:'③',78:'②',
+      // 79-1–79-4
+      '79-1':'B','79-2':'C','79-3':'A','79-4':'D'
+    };
+
+    function checkAnswers() {
+      let total = Object.keys(answers).length;
+      let correctCount = 0;
+      document.querySelectorAll('.question').forEach(div => {
+        const q = div.dataset.q;
+        let user, right = answers[q];
+        // radio group?
+        const radios = div.querySelectorAll('input[type=radio]');
+        if (radios.length) {
+          radios.forEach(r => { if (r.checked) user = r.value; });
+        } else {
+          const txt = div.querySelector('input[type=text]').value.trim();
+          user = txt.replace(/\s+/g,'');
+        }
+        if (user === right) {
+          div.classList.remove('wrong');
+          div.classList.add('correct');
+          correctCount++;
+        } else {
+          div.classList.remove('correct');
+          div.classList.add('wrong');
+        }
+      });
+      document.getElementById('result').textContent =
+        `총 ${total}문제 중 ${correctCount}문제 정답! (${((correctCount/total)*100).toFixed(1)}%)`;
+    }
+  </script>
+
+</body>
+</html>
+```[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/auman/auman.github.io/tree/fde53bca6201e16abf96ec53b373220882f0b035/meta.py?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/kjj6198/ts-arib-parse/tree/a5dfafd108479cd450fc40dd4072f58b9e61c829/JIS.js?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "2")
